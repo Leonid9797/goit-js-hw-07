@@ -23,13 +23,12 @@ function createGalleryCardsMarkup(alleryItems) {
     })
     .join("");
 }
-
-function onGalleryConteinerClick(evt) {
-  evt.preventDefault();
-}
-
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionPosition: "bottom",
   captionDelay: 250,
 });
+
+function onGalleryConteinerClick(evt) {
+  evt.preventDefault();
+}
